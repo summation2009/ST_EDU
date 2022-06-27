@@ -1,3 +1,3 @@
 # ST_EDU
 
-![Alt text](https://github.com/topwatcharakorn/EducationCode-by-SumTech/blob/main/Examples%20ST-EDU/OLED0.96''/Hello_Sumtech/IMG.png?raw=true "Wiring digram")
+![Alt text](https://github.com/summation2009/ST_EDU/blob/main/library/messageImage_1655959692609.jpeg?raw=true "Wiring digram")
