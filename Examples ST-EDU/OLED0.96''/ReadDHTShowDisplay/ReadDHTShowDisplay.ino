@@ -28,7 +28,6 @@ void setup() {
   dht.begin();
 
   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-    Serial.println(F("SSD1306 allocation failed"));
     for (;;);
   }
   delay(2000);
@@ -43,7 +42,6 @@ void loop() {
   float t = dht.readTemperature();
   float h = dht.readHumidity();
   if (isnan(h) || isnan(t)) {
-    Serial.println("Failed to read from DHT sensor!");
   }
   // clear display
   display.clearDisplay();
@@ -72,9 +70,5 @@ void loop() {
   display.print(" %");
 
   display.display();
-  Serial.print("Humidity: ");
-  Serial.print(h);
-  Serial.print("%  Temperature: ");
-  Serial.print(t);
-  Serial.print("°C ");
+  
 }
